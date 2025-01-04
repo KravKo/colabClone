@@ -1,5 +1,5 @@
 import React from "react";
-import "./Index.css";
+import './index.css';
 import {useState, useEffect} from "react";
 import{v4 as uuidv4} from "uuid";
 import CryptoJS from "crypto-js";
@@ -49,7 +49,7 @@ function Index() {
       }, [formData.amount]);
   return (
     <>
-        <div className="main-buy-container">
+        <div className="main-buy-container flex bg-red-500">
           <form
             action="https://rc-epay.esewa.com.np/api/epay/main/v2/form"
             method="POST"

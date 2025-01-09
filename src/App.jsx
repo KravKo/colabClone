@@ -3,7 +3,7 @@ import Home from "./pages/home/Index"
 import Buy from "./pages/buy/Index"
 import Success from "./pages/status/Index"
 import NotFound from "./pages/404/Index"
-
+import SignIn from "./pages/SignIn"
 function App() {
 
   return (
@@ -14,6 +14,7 @@ function App() {
           <Route path="/buy" element={<Buy />} />
           <Route path="/success" element={<Success />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/sign-in" element={<SignIn />} />
         </Routes>
       </BrowserRouter>
     </>

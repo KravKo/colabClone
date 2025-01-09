@@ -1,5 +1,4 @@
 import React from "react";
-import './index.css';
 import {useState, useEffect} from "react";
 import{v4 as uuidv4} from "uuid";
 import CryptoJS from "crypto-js";

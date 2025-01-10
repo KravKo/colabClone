@@ -4,7 +4,7 @@ import Buy from "./pages/buy/Index"
 import Success from "./pages/status/Index"
 import Map from "./pages/map/Index"
 import NotFound from "./pages/404/Index"
-import SignIn from "./pages/SignIn"
+import LogIn from "./pages/LogIn"
 function App() {
 
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/success" element={<Success />} />
           <Route path="/map" element={<Map />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/login" element={<LogIn />} />
         </Routes>
       </BrowserRouter>
     </>

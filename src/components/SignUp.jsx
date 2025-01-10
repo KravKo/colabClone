@@ -51,11 +51,11 @@ export default function SignUp() {
 
                 {/* Sign In Form? */}
                 <div className="sign-in-form flex flex-col items-center justify-center mt-5 space-y-2">
-                    <input type="name" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Name'/>
-                    <input type="number" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Password'/>
-                    <input type="email" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Email'/>
-                    <input type="email" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Email'/>
-                    <input type="email" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Email'/>
+                    <input type="name" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Full Name' required/>
+                    <input type="tel" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Phone Number' required/>
+                    <input type="number" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='National Identity ot Citizenship Number' required/>
+                    <input type="email" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Email' required/>
+                    <input type="password" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Password' required/>
                 </div>
                 
                 {/* Confirm sign in */}

@@ -84,7 +84,7 @@ export default function SignUp({ handelToggle }) {
             <input
               type={showPassword ? "password" : "text"}
               className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
-              placeholder="Conform Password"
+              placeholder="Confirm Password"
             />
             <p onClick={handelClick} className="text-xl cursor-pointer mr-4">
               {showPassword ? <FaEye /> : <FaEyeSlash />}

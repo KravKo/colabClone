@@ -64,9 +64,10 @@ export default function SignIn({ handelToggle }) {
           Forgot your Password?
         </div>
         {/* Confirm sign in */}
-        <div className="mt-5 text-xl text-white w-32 font-semibold bg-red-600 flex self-center items-center justify-center pt-2 pb-2 rounded-2xl">
+        <div className="mt-5 text-xl text-white w-32 font-semibold bg-red-600 flex self-center items-center justify-center pt-2 pb-2 rounded-2xl hover:bg-red-700 transform hover:scale-105 transition-all duration-300">
           <button>SIGN IN</button>
         </div>
+        
       </div>
       {/* Right half */}
       <div className="w-[50%] bg-red-700 flex items-center justify-center text-white">
@@ -86,7 +87,7 @@ export default function SignIn({ handelToggle }) {
               SIGN UP
             </button>
             <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-          </div>
+            </div>
         </div>
       </div>
     </div>

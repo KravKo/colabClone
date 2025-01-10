@@ -5,15 +5,17 @@ import SignUp from '../components/SignUp';
 
 export default function LogIn() {
   const [isSignUp, setIsSignUp] = React.useState(true);
-  const handleToggle = () => {
+  const handelToggle = () => {
     setIsSignUp(!isSignUp);
-  }
+  };
 
   return (
-
     <div>
-      {isSignUp ? <SignUp /> : <SignIn />}
+      {isSignUp ? (
+        <SignUp handelToggle={handelToggle} />
+      ) : (
+        <SignIn handelToggle={handelToggle} />
+      )}
     </div>
-  )
+  );
 }
-

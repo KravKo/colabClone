@@ -4,7 +4,7 @@ import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGoogle } from "react-icons/fa";
 
-export default function SignUp() {
+export default function SignUp({ handelToggle }) {
   return (
     <div className='main flex h-[100vh]'>
         {/* Left half */}
@@ -62,7 +62,7 @@ export default function SignUp() {
                 </div>
                 {/* Confirm sign in */}
                 <div className="mt-5 text-xl text-white w-32 font-semibold bg-red-600 flex self-center items-center justify-center pt-2 pb-2 rounded-2xl">
-                    <button>
+                    <button onClick={handelToggle}>
                         SIGN UP
                     </button>
                 </div>

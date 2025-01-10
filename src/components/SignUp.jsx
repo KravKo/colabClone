@@ -39,27 +39,25 @@ export default function SignUp({ handelToggle }) {
                 {/* Sign In Options */}
                 <div className="sign-in-options  w-full mt-5 flex flex-col items-center justify-center">
                     <div className="sign-in text-4xl font-bold text-center">
-                        Sign In
+                        Sign Up
                     </div>
                     <div className="options flex justify-center items-center mt-5 space-x-3">
                         <div className='p-[3px] shadow-[2px_2px_2px_rgba(0,0,0,0.2)] h-10 w-10 flex border-solid border-[1px] border-slate-300 items-center justify-center rounded-2xl' ><CiFacebook size={42} style={{strokeWidth: 0.7}} /></div>
                         <div className='p-[3px] shadow-[2px_2px_2px_rgba(0,0,0,0.2)] h-10 w-10 flex border-solid border-[1px] border-slate-300 items-center justify-center rounded-2xl' ><CiLinkedin size={42} style={{strokeWidth: 0.7}}/></div>
                         <div className='p-[3px] shadow-[2px_2px_2px_rgba(0,0,0,0.2)] h-10 w-10 flex border-solid border-[1px] border-slate-300 items-center justify-center rounded-2xl' ><FaGoogle size={28} style={{strokeWidth: 0.7}}/></div>
                     </div>
-                    <div className='mt-5 font-light text-center'>
-                        or use existing account
-                    </div>
+                    
                 </div>
 
                 {/* Sign In Form? */}
-                <div className="sign-in-form flex flex-col items-center justify-center mt-5 space-y-7">
+                <div className="sign-in-form flex flex-col items-center justify-center mt-5 space-y-2">
+                    <input type="name" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Name'/>
+                    <input type="number" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Password'/>
                     <input type="email" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Email'/>
-                    <input type="password" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Password'/>
+                    <input type="email" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Email'/>
+                    <input type="email" className='bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4' placeholder='Email'/>
                 </div>
-                {/* forgot password */}
-                <div className="forgot-password font-light text-center mt-5 font-">
-                    Forgot your Password?
-                </div>
+                
                 {/* Confirm sign in */}
                 <div className="mt-5 text-xl text-white w-32 font-semibold bg-red-600 flex self-center items-center justify-center pt-2 pb-2 rounded-2xl">
                     <button onClick={handelToggle}>

@@ -76,7 +76,7 @@ export default function SignUp({ handelToggle }) {
               className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
               placeholder="Password"
             />
-            <p onClick={handelClick} className="text-xl cursor-pointer ml-2">
+            <p onClick={handelClick} className="text-xl cursor-pointer mr-4">
               {showPassword ? <FaEye /> : <FaEyeSlash />}
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function SignUp({ handelToggle }) {
               className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
               placeholder="Conform Password"
             />
-            <p onClick={handelClick} className="text-xl cursor-pointer ml-[-10vh]">
+            <p onClick={handelClick} className="text-xl cursor-pointer mr-4">
               {showPassword ? <FaEye /> : <FaEyeSlash />}
             </p>
           </div>

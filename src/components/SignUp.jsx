@@ -4,7 +4,7 @@ import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGoogle } from "react-icons/fa";
 
-export default function SignUp({ handelToggle }) {
+export default function SignUp() {
   return (
     <div className='main flex h-[100vh]'>
         {/* Left half */}
@@ -21,7 +21,7 @@ export default function SignUp({ handelToggle }) {
             {/* sign up button */}
             {/* code not understood for hover effect using relative absolute */}
             <div className="mt-5 text-xl rounded-3xl border-white border-2 p-2 font-bold px-5 shadow-[2px_3px_4px_rgba(0,0,0,0.2)] relative overflow-hidden group hover:text-red-700">
-                    <button onClick={handelToggle} className="relative z-10">
+                    <button className="relative z-10">
                     SIGN IN
                     </button>
                 <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
@@ -60,7 +60,7 @@ export default function SignUp({ handelToggle }) {
                 
                 {/* Confirm sign in */}
                 <div className="mt-5 text-xl text-white w-32 font-semibold bg-red-600 flex self-center items-center justify-center pt-2 pb-2 rounded-2xl">
-                    <button >
+                    <button onClick={"handleToggle"}>
                         SIGN UP
                     </button>
                 </div>

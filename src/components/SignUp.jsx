@@ -99,7 +99,7 @@ export default function SignUp({ handelToggle }) {
         <div className="mt-5 text-xl text-white w-32 font-semibold bg-red-600 flex self-center items-center justify-center pt-2 pb-2 rounded-2xl hover:bg-red-700 transform hover:scale-105 transition-all duration-300">
           <button>SIGN UP</button>
         </div>
-        <button className="sm:hidden underline mt-2">or Sign In</button>
+        <button className="sm:hidden underline mt-2" onClick={handelToggle}>or Sign In</button>
       </div>
     </div>
   );

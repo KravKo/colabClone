@@ -27,8 +27,8 @@ export default function SignUp({ handelToggle }) {
           </div>
           {/* sign up button */}
           {/* code not understood for hover effect using relative absolute */}
-          <div className="mt-5 text-xl rounded-3xl border-white border-2 p-2 font-bold px-5 shadow-[2px_3px_4px_rgba(0,0,0,0.2)] relative overflow-hidden group hover:text-red-700">
-            <button onClick={handelToggle} className="relative z-10">
+          <div onClick={handelToggle} className="mt-5 text-xl rounded-3xl border-white border-2 p-2 font-bold px-5 shadow-[2px_3px_4px_rgba(0,0,0,0.2)] relative overflow-hidden group hover:text-red-700 cursor-pointer">
+            <button  className="relative z-10">
               SIGN IN
             </button>
             <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>

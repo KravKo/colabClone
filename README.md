@@ -4,8 +4,8 @@ this is our group name
 # Project Title
 
 ## Table of Contents
-- [Introduction](#-introduction)
-- [Features](#-features)
+- [Introduction](#introduction)
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)

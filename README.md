@@ -1,6 +1,9 @@
 ## Code blooded🩸
 this is our group name
 
+# Features
+[About us](#-about-us)
+
 ## About us
 We are team code blooded [!["Rakta"](https://github.com/KravKo/colabClone/blob/main/src/assets/logo.png)]
 
@@ -10,4 +13,3 @@ We are team code blooded [!["Rakta"](https://github.com/KravKo/colabClone/blob/m
 ## features
 -**hello kishor kumar**
 -he is kishor kumar urf krishav
-

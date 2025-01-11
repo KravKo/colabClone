@@ -42,22 +42,23 @@ export default function SignIn({ handelToggle }) {
         {/* Sign In Form? */}
         <div className="sign-in-form flex flex-col items-center justify-center mt-5 space-y-7">
             <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE]">
-          <input
-            type="email"
-            className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
-            placeholder="Email"
-          />
-          </div>
+              <input
+                type="email"
+                className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
+                placeholder="Email"
+              />
+            </div>
           <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE]">
-            <input
-              type={showPassword ? "password" : "text"}
-              className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
-              placeholder="Password"
-            />
-            <p onClick={handelClick} className="text-xl cursor-pointer mr-4">
-              {showPassword ? <FaEye /> : <FaEyeSlash />}
-            </p>
-          </div>
+              <input
+                type={showPassword ? "password" : "text"}
+                className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
+                placeholder="Password"
+                id="password"
+              />
+              <p onClick={handelClick} className="text-xl cursor-pointer mr-4" id="showPassword">
+                {showPassword ? <FaEye /> : <FaEyeSlash />}
+              </p>
+        </div>
         </div>
         {/* forgot password */}
         <div className="forgot-password font-light text-center mt-5 font-">

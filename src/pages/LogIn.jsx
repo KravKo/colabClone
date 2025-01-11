@@ -10,7 +10,7 @@ export default function LogIn() {
   };
 
   return (
-    <div>
+    <div className=''>
       {isSignUp ? (
         <SignUp handelToggle={handelToggle} />
       ) : (

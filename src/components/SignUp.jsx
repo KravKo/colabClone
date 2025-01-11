@@ -15,7 +15,7 @@ export default function SignUp({ handelToggle }) {
   return (
     <div className="main flex h-[100vh]">
       {/* Left half */}
-      <div className="w-[50%] bg-red-700 flex items-center justify-center text-white">
+      <div className="w-[50%] bg-red-700 flex items-center justify-center text-white max-sm:hidden">
         <div className="right-main flex flex-col items-center justify-center">
           {/* motto */}
           <div className="text-4xl w-[550px] text-center font-bold">
@@ -35,8 +35,11 @@ export default function SignUp({ handelToggle }) {
           </div>
         </div>
       </div>
+
+
+
       {/* Right Half */}
-      <div className="left-half w-[50%] flex flex-col align-center justify-center ">
+      <div className="left-half w-[50%] flex flex-col align-center justify-center max-sm:w-[100%]">
         {/* Logo */}
         <div className="logo items-center justify-center flex w-full mt-14">
           <img src={Logo} alt="" className="h-28" />
@@ -57,30 +60,30 @@ export default function SignUp({ handelToggle }) {
           </div>
         </div>
 
-        {/* Sign In Form? */}
-        <div className="sign-in-form flex flex-col items-center justify-center mt-5 space-y-2">
+        {/* Sign Up Form? */}
+        <div className="sign-in-form flex flex-col items-center justify-center mt-5 space-y-2 max-sm:w-full">
           <input
             type="name"
-            className="bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4 focus:outline-none"
+            className="bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4 focus:outline-none max-sm:w-[90%]"
             placeholder="Name"
 
           />
           <input
             type="email"
-            className="bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4 focus:outline-none"
+            className="bg-[#E4DEDE] w-[50%] h-12 rounded-[7px] p-4 focus:outline-none max-sm:w-[90%]"
             placeholder="Email"
           />
-          <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE]">
+          <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE] max-sm:w-[90%]">
             <input
               type={showPassword ? "password" : "text"}
-              className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
+              className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none "
               placeholder="Password"
             />
             <p onClick={handelClick} className="text-xl cursor-pointer mr-4">
               {showPassword ? <FaEye /> : <FaEyeSlash />}
             </p>
           </div>
-          <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE]">
+          <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE] max-sm:w-[90%]">
             <input
               type={showPassword ? "password" : "text"}
               className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
@@ -93,9 +96,10 @@ export default function SignUp({ handelToggle }) {
         </div>
 
         {/* Confirm sign in */}
-        <div className="mt-5 text-xl text-white w-32 font-semibold bg-red-600 flex self-center items-center justify-center pt-2 pb-2 rounded-2xl">
+        <div className="mt-5 text-xl text-white w-32 font-semibold bg-red-600 flex self-center items-center justify-center pt-2 pb-2 rounded-2xl hover:bg-red-700 transform hover:scale-105 transition-all duration-300">
           <button>SIGN UP</button>
         </div>
+        <button className="sm:hidden underline mt-2">or Sign In</button>
       </div>
     </div>
   );

@@ -8,14 +8,23 @@ import { FaEyeSlash } from "react-icons/fa";
 
 export default function SignIn({ handelToggle }) {
   const [showPassword, setShowPassword] = React.useState(true);
+  const [nullPassword, setNullPassword] = React.useState(true);
 
   const handelClick = () => {
     setShowPassword(!showPassword);
   };
+  const handlePasswordChange = (e) => {
+    if (e.target.value === "") {
+      setNullPassword(true);
+    } else {
+      setNullPassword(false);
+    }
+  };
+  
 
   return (
     <div className="main flex h-[100vh]">
-      <div className="left-half w-[50%] flex flex-col align-center justify-center ">
+      <div className="left-half w-[50%] flex flex-col align-center justify-center max-sm:w-[100%]">
         {/* Logo */}
         <div className="logo items-center justify-center flex w-full mt-14">
           <img src={Logo} alt="" className="h-28" />
@@ -40,23 +49,24 @@ export default function SignIn({ handelToggle }) {
         </div>
 
         {/* Sign In Form? */}
-        <div className="sign-in-form flex flex-col items-center justify-center mt-5 space-y-7">
-            <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE]">
+        <div className="sign-in-form flex flex-col items-center justify-center mt-5 space-y-7 max-sm:w-full">
+            <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE] max-sm:w-[90%]">
               <input
                 type="email"
                 className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
                 placeholder="Email"
               />
             </div>
-          <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE]">
+          <div className="flex items-center justify-between w-[50%] h-12 rounded-[7px] bg-[#E4DEDE] max-sm:w-[90%]">
               <input
                 type={showPassword ? "password" : "text"}
-                className="bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
+                className=" bg-[#E4DEDE] w-[100%] h-12 rounded-[7px] p-4 focus:outline-none"
                 placeholder="Password"
-                id="password"
+                onChange={handlePasswordChange}
               />
-              <p onClick={handelClick} className="text-xl cursor-pointer mr-4" id="showPassword">
-                {showPassword ? <FaEye /> : <FaEyeSlash />}
+              <p onClick={handelClick} className="text-xl cursor-pointer mr-4 active:text-red-600">
+                
+                {nullPassword ? null : (showPassword ? <FaEye /> : <FaEyeSlash />)}
               </p>
         </div>
         </div>
@@ -68,10 +78,11 @@ export default function SignIn({ handelToggle }) {
         <div className="mt-5 text-xl text-white w-32 font-semibold bg-red-600 flex self-center items-center justify-center pt-2 pb-2 rounded-2xl hover:bg-red-700 transform hover:scale-105 transition-all duration-300">
           <button>SIGN IN</button>
         </div>
+        <button className="mt-2 sm:hidden underline">or Create New Account</button>
         
       </div>
       {/* Right half */}
-      <div className="w-[50%] bg-red-700 flex items-center justify-center text-white">
+      <div className="w-[50%] bg-red-700 flex items-center justify-center text-white max-sm:hidden">
         <div className="right-main flex flex-col items-center justify-center">
           {/* motto */}
           <div className="text-4xl w-[550px] text-center font-bold">
